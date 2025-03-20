@@ -1,0 +1,79 @@
+#screen_1-wrapper {
+    transition: opacity 1s linear 0.5s;
+}
+
+#screen_1-wrapper.ending {
+    opacity: 0;
+    /*opacity: .2;*/
+}
+
+#screen_1-button {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    border: 0 solid #FF79B6;
+    color: #FF79B6;
+    transition: all 1s;
+    background-color: white;
+    z-index: 1;
+}
+
+#screen_1-wrapper.ending #screen_1-button {
+    right: -30vw;
+}
+
+#screen_1-button:hover {
+    color: white;
+    background-color: #FF79B6;
+    border-color: white;
+}
+
+.fullWidth #screen_1-button {
+    right: 2.8vw;
+    top: 28.35vw;
+    line-height: 3.8vw;
+    width: 22.2vw;
+    border-width: 0.55vw;
+    font-size: 2.6vw;
+}
+
+.fullHeight #screen_1-button {
+    right: 4.6vh;
+    top: 46.5vh;
+    line-height: 6.2vh;
+    width: 36.4vh;
+    border-width: 0.9vh;
+    font-size: 4vh;
+}
+#screen_1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+#screen_1 .line,
+#screen_1 .circle {
+    transition: fill 1s;
+}
+
+#screen_1-button:hover + #screen_1 .line-white-on-hover,
+#screen_1-button:hover + #screen_1 .circle-white-on-hover,
+#screen_1 .line-white-on-hover:hover,
+#screen_1 .circle-white-on-hover:hover {
+    fill: white;
+}
+
+#screen_1-button:hover + #screen_1 .line-group.line-pink-on-hover path,
+#screen_1 .line-group.line-pink-on-hover:hover path {
+    fill: pink;
+}
+
+#screen_1-button:hover + #screen_1 .line-red-on-hover,
+#screen_1-button:hover + #screen_1 .circle-red-on-hover,
+#screen_1 .line-red-on-hover:hover,
+#screen_1 .circle-red-on-hover:hover {
+    fill: #f71e1e;
+}

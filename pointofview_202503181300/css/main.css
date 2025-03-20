@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    color: black;
+}
+
+._transformer {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#scene {
+    position: relative;
+    overflow: hidden;
+}
+
+#scene.fullWidth {
+    width: 100vw;
+    height: 60.9vw;
+}
+#scene.fullHeight {
+    width: 164.2vh;
+    height: 100vh;
+}
+
+.text {
+    position: absolute;
+    display: block;
+    color: white;
+    font-family: arial, sans-serif;
+    z-index: 1;
+}
+
+.fullWidth .text.top {
+    font-size: 5.45vw;
+    top: 2.8vw;
+}
+
+.fullWidth .text.bottom {
+    font-size: 2.3vw;
+    bottom: 3.1vw;
+}
+
+.fullWidth .text.left {
+    left: 3.6vw;
+}
+
+.fullWidth .text.right {
+    right: 3.6vw;
+}
+
+.fullWidth .top-center {
+    top: 9vw;
+    font-size: 2.3vw;
+    left: 50vw;
+    transform: translateX(-50%);
+}
+
+.fullHeight .text.top {
+    font-size: 9vh;
+    top: 4.2vh;
+}
+
+.fullHeight .text.bottom {
+    font-size: 3.9vh;
+    bottom: 5.1vh;
+}
+
+.fullHeight .text.left {
+    left: 6vh;
+}
+
+.fullHeight .text.right {
+    right: 6.1vh;
+}
+
+.fullHeight .top-center {
+    top: 15vh;
+    font-size: 3.6vh;
+    left: 82.1vh;
+    transform: translateX(-50%);
+}
